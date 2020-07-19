@@ -13,14 +13,18 @@
         #css_select{
             font-size: 30px;
         }
+        .deactive{
+            text-decoration: line-through;
+        }
     </style>
 </head>
 <body> 
+    <h1 class="deactive">수업의 순서</h1>
     <h1>Hello CSS3</h1>
     <ul>
-        <li>HTML</li>
-        <li id="css_select">CSS</li>
-        <li>JavaScript</li>
+        <li class="deactive">HTML</li> <!-- Class: 대상을 관리하기 쉽도록 grouping 하는 것-->
+        <li id="css_select">CSS</li> <!-- ID: 단 한번만 등장해야 한다.-->
+        <li class="deactive">JavaScript</li>
     </ul>
 </body>
 </html>
