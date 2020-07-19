@@ -6,15 +6,25 @@
     <title>CSS3</title>
     <style> 
         h1{color:blue}
-        li{
+        ul li{
             color:mediumvioletred;
             text-decoration: underline;
+        }
+        ol li{
+            color:black;
+            text-decoration: none;
+        }
+        #lecture>li{ /*lecture 바로 밑에 li만 다음 처리를 한다.*/
+            border: 1px solid maroon;
         }
         #css_select{
             font-size: 30px;
         }
         .deactive{
             text-decoration: line-through;
+        }
+        ul, ol{
+            background-color: powderblue;
         }
     </style>
 </head>
@@ -26,5 +36,15 @@
         <li id="css_select">CSS</li> <!-- ID: 단 한번만 등장해야 한다.-->
         <li class="deactive">JavaScript</li>
     </ul>
+    <ol id="lecture">
+        <li>Node JS
+            <ol>
+                <li>selector</li>
+                <li>declaration</li>
+            </ol>
+        </li>
+        <li>React Redux</li>
+        <li>React Ajax</li>
+    </ol>
 </body>
 </html>
