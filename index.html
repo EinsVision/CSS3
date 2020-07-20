@@ -26,6 +26,18 @@
         ul, ol{
             background-color: powderblue;
         }
+        a:visited{
+            color:purple;
+        }
+        a:hover{
+            color:hotpink;
+        }
+        a:active{
+            color:greenyellow;
+        }
+        a:focus{
+            color:white; /*가장 마지막에 넣는 것이 좋다.*/
+        }
     </style>
 </head>
 <body> 
@@ -46,5 +58,11 @@
         <li>React Redux</li>
         <li>React Ajax</li>
     </ol>
+    <!-- :link - 방문한 적이 없는 링크
+    :visited - 방문한 적이 있는 링크
+    :hover - 마우스를 롤오버 했을 때 
+    :active - 마우스를 클릭했을 때  -->
+    <a href="www.naver.com">방문함</a>
+    <a href="www.a.a">방문안함</a>
 </body>
 </html>
