@@ -18,6 +18,21 @@
             margin: 40px;
             width: 200px;
         }
+        div{
+            margin:10px;
+            width:150px;
+            box-sizing: border-box; 
+            /* box-sizing:content-box; 이것이 기본이나 box의 크기가 달라지는 문제가 있음 */
+        }
+
+        #small{
+            border:10px solid black;
+        }
+
+        #large{
+            border:30px solid black;
+        }
+
     </style>
 </head>
 <body>
@@ -29,6 +44,7 @@
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae adipisci adipisicing
     </p>
-    
+    <div id="small">Hello small</div>
+    <div id="large">Hello large</div>
 </body>
 </html>
