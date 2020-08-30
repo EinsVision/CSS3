@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="alert" onclick="alertFunc();"/>
+    <input type="button" value="confirm" onclick="confrimFunc();"/>
+    <input type="button" value="prompt" onclick="promptFunc();"/>
+    <script>
+        function alertFunc()
+        {
+            alert(1);
+            alert(2);
+            alert(3);
+        }
+        function confrimFunc()
+        {
+            if(confirm('ok?'))
+            {
+                alert('ok');
+            }
+            else
+            {
+                alert('cancel');
+            }
+        }
+        function promptFunc()
+        {
+            if(prompt('id?') ==='jcdlove')
+            {
+                alert('welcome');
+            }
+            else
+            {
+                alert('fail');
+            }
+        }
+    </script>
+</body>
+</html>
