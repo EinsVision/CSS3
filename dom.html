@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ol>
+        <li class = "active">HTML</li>
+        <li class = "active">CSS</li>
+        <li class = "active">JavaScript</li>
+    </ol>
+
+    <ul>
+        <li>elements</li>
+        <li class="detect">triple</li>
+        <li id="findID">dozen</li>
+    </ul>
+    
+    <script>
+        // document.getElementsByTagName
+        var lis = document.getElementsByTagName('li');
+        for(var i = 0; i < lis.length; i++)
+        {
+            if(i===0)
+            {
+                lis[i].style.color='red';
+            }
+            else if(i===1)
+            {
+                lis[i].style.color='blue';
+            }
+            else{
+                lis[i].style.color='green';
+            }
+            
+        }
+        // document.getElementsByClassName
+        var list = document.getElementsByClassName('active');
+        for(var i=0; i < list.length; i++)
+        {
+            list[i].style.color='tomato';
+        }
+
+        // document.getElementById
+        var li = document.getElementById('findID');
+        li.style.color = 'black';
+
+        // document.querySelector 
+        var qs = document.querySelector('.detect');
+        qs.style.color = 'gray';
+
+    </script>
+</body>
+</html>
